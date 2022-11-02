@@ -9,3 +9,14 @@ body{
   color: black;
   cursor: pointer;
 }
+
+.task{
+  margin: 1em auto;
+  width: 50%;
+  background-color: aliceblue;
+  border: solid 1px black;
+}
+
+.reminder{
+  border-left: solid 3px green;
+}
