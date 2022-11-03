@@ -1,17 +1,11 @@
 import Button from "./Button"
 import Tasks from "./Tasks";
 
-const Header = ({ title }) =>{
-  const onClick = () =>{
-    console.log('Click');
-  }
+const Header = ({ title, onAdd, showAssprop }) =>{
  
   return (<header>
     <h1 className="h1">{title}</h1>
-    <Button color="red" text="hello" onClick={onClick}/>
-    <Button color="green" text="my" />
-    <Button color="yellow" text="little" />
-    <Button color="cyan" text="friend" />
+    <Button color={showAssprop ? "green" : "red"} text={showAssprop ? "Add" : "Close"} onClick={ onAdd }/>
   </header>)
 }
 
